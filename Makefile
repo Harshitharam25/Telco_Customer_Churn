@@ -1,4 +1,4 @@
-.PHONY: setup install run lint clean help
+.PHONY: setup install run lint test test-cov clean help
 
 setup:
 	python -m venv venv
@@ -13,6 +13,11 @@ run:
 lint:
 	black notebooks/
 	flake8 notebooks/ --max-line-length=100
+test:
+	pytest tests/ -v
+
+test-cov:
+	pytest tests/ -v --cov=notebooks --cov-report=html
 
 clean:
 	find . -type d -name __pycache__ -exec rm -r {} + 2>/dev/null || true

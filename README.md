@@ -19,13 +19,16 @@ make run
 
 # 5. Run tests
 pytest tests/ -v
-├── data/              # Raw dataset
-├── notebooks/         # Main analysis
-├── dashboards/        # Power BI report
+Telco_Customer_Churn/
+├── data/              # Raw dataset (7K+ customer records)
+├── notebooks/         # Main analysis notebook
+├── dashboards/        # Power BI report & screenshots
 ├── tests/             # Unit tests
-├── Makefile          # Automation
-└── requirements.txt  # Dependencies
-
+├── Makefile          # Automation commands
+├── requirements.txt  # Python dependencies
+├── .gitignore        # Git ignore rules
+├── .env.example      # Environment template
+└── README.md         # This file
 ## Dataset
 
 - **Source:** [IBM Telco Customer Churn (Kaggle)](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
@@ -52,9 +55,7 @@ Logistic regression achieves **78% accuracy** on the test set. EDA shows churn c
 
 Full interactive report: `dashboards/Telco_Churn_Dashboard.pbix`
 
-## How to reproduce
 
-```bash
 pip install -r requirements.txt
 jupyter notebook notebooks/telco_churn_analysis.ipynb
 ```
@@ -65,7 +66,7 @@ jupyter notebook notebooks/telco_churn_analysis.ipynb
 - No hyperparameter tuning or cross-validation
 - No class-imbalance handling (churn is a minority class)
 - Snapshot data — no time dimension, so no survival/retention modeling
-```markdown
+
 ## 🤝 Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.

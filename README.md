@@ -1,6 +1,30 @@
 # Telco Customer Churn — Analysis & Prediction
 
 Analyzing 7,000+ telecom customer records to identify what drives churn, and predicting churn risk with a logistic regression model. Insights delivered through a 2-page Power BI dashboard.
+## ⚡ Quick Start
+
+```bash
+# 1. Clone repo
+git clone https://github.com/Harshitharam25/Telco_Customer_Churn.git
+cd Telco_Customer_Churn
+
+# 2. Setup
+make setup
+
+# 3. Download dataset from Kaggle to data/ folder
+# https://www.kaggle.com/datasets/blastchar/telco-customer-churn
+
+# 4. Run
+make run
+
+# 5. Run tests
+pytest tests/ -v
+├── data/              # Raw dataset
+├── notebooks/         # Main analysis
+├── dashboards/        # Power BI report
+├── tests/             # Unit tests
+├── Makefile          # Automation
+└── requirements.txt  # Dependencies
 
 ## Dataset
 
@@ -41,6 +65,12 @@ jupyter notebook notebooks/telco_churn_analysis.ipynb
 - No hyperparameter tuning or cross-validation
 - No class-imbalance handling (churn is a minority class)
 - Snapshot data — no time dimension, so no survival/retention modeling
+```markdown
+## 🤝 Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
+---
+
 
 ## AI disclosure
 

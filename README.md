@@ -11,7 +11,7 @@ Analyzing 7,000+ telecom customer records to identify what drives churn, and pre
 ## Headline result
 
 <!-- FILL THIS IN: e.g. "Logistic regression predicts churn with XX% accuracy. Month-to-month contracts and electronic check payments are the strongest churn drivers." -->
-Logistic regression achieves **XX% accuracy** on the test set. EDA shows churn concentrates in **month-to-month contracts**, **fiber optic internet customers**, and **higher monthly charges**.
+Logistic regression achieves **78% accuracy** on the test set. EDA shows churn concentrates in **month-to-month contracts**, **fiber optic internet customers**, and **higher monthly charges**.
 
 ## Method & key decisions
 
